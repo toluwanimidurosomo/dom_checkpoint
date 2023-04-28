@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Checkpoint</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="main-cont">
+
+        <!-- left side -->
+        <div class="left">
+
+            <!-- Cart Title -->
+            <div class="top">
+                <h3 class="title">Emma's<span>Cart</span></h3>
+            </div>
+
+            <div class="cart-data">
+                <h4 class="shopping-cart">Shopping cart</h4>
+                <p class="cart-desc">3 Products Available</p>
+
+                <!-- Products List -->
+                <div class="products" id="AllProducts">
+
+                    <!-- Single Product -->
+                    <div class="single-product">
+                        <div class="img-prod">
+                            <img id="prodImg" src="https://s3-alpha-sig.figma.com/img/f7d7/1dcb/f2d8a1f106b1613a422672f1faaf6f19?Expires=1682899200&Signature=bUpVxEc0Sx-pZ6ddpC1JmgMqSEZ2KD6bS7do2B~rTKCEI8sb22JcgZeofByOSlnynQ6X5qKRIRmDL-TrkCNutmQeZshzuLWHhbK9zYivueJY0KtrYxKxhYmoFfFv8ji0fQmtE~cWun43iBe2-WYAMt89OeObtR~oZoyyNThM6A4A~pMxSHOFKUIIpTOafpoT0YnVHZ~6SiPPKym1150JT4Ak0bItTty4VgjoJF21GMw5ukTnvNaIuFv2Z4el~6eTPjkeOQjvht5OjEHW2LZHcfg7wxHJcj9Jv2T~hjxgl7hJ6uddslJeqO7aB4RxIl8PFn0uUByD~lzw-~Pt1dIWZA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        </div>
+
+                        <div class="prod-desc">
+                            <h3 id="prodName" class="prodName">Italian Pizza</h3>
+                            <h4 id="prodPrice" class="price" data-price="20">$20</h4>
+
+                            <button id="addToCart o" class="btn">Add To Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Single Product -->
+                    <div class="single-product">
+                        <div class="img-prod">
+                            <img id="prodImg" src="https://s3-alpha-sig.figma.com/img/8996/dde9/a211a003d60b2597e2fff5076f6510d9?Expires=1682899200&Signature=lx5f1siE5gdY5ZiBREHG-dto7M13k34aLsxh1w50V63pL8Y~t6c9WMajA6EEwPTiooQ0OgG5z32LY8rcoDSGh2fbkaK97-cTrcUmzWpp8Auk2m4Z-~EiO8SqmG~7fiRk2LJgCIpUt4tUkaA6VcyQyYdIRcXUKXAhQLIiwWcEPoBge7NeRTJKpZb2R4ovSyVLeCOlYHnLwViJE2Mwark43DYEI3vpcL6vz2VKkvYpwWAMyMZsGPTTTHQdRrNzgz0SDln7QAAmDcYrXNAU4usKvUMfzISrvLegVrnKTksGaAFgGjxpawb0KdfB2tpcuk5Z7nqnTXaEjx0IfDt7jDr-Ew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        </div>
+
+                        <div class="prod-desc">
+                            <h3 id="prodName" class="prodName">Combo Plate</h3>
+                            <h4 id="prodPrice" class="price" data-price="60">$60</h4>
+
+                            <button id="addToCart p" class="btn">Add To Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Single Product -->
+                    <div class="single-product">
+                        <div class="img-prod">
+                            <img id="prodImg" src="https://s3-alpha-sig.figma.com/img/a646/ff71/8760850495f2055df3205287002c688d?Expires=1682899200&Signature=d8T8OnW6HoqWkpiY-VE0sMDEx5y~fzgHBzpHInZ0cyzT9K33Dppnx8GM6jxep2MKO9wu~4kW0QGw8GAxSuHn0DQZ4yjuB3DOWTDqXb4mWv6ggM~6FdxoSiIvK~4JYZPv4Y-DALdopqs1TBDfSWAtPzGT1~tkb5-4zOMmiRGbbIJeWjqo22co9Q2aFyXiclb7RkkD~6PReM6QoXX504b6jzjkC3RyUIHFO~hTb5Bk~dqUKXdOK9ACG27x3nahBvvOMxYV3cabuAzmzv6I0kx~6MwxPINrUJ~w4X4Ok1GgDBmNj-xBYF4FCJsL6~4Hiu-4YntyNiI-fCMCcmPyd4p9kA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        </div>
+
+                        <div class="prod-desc">
+                            <h3 id="prodName" class="prodName">Spanish Rice</h3>
+                            <h4 id="prodPrice" class="price" data-price="100">$100</h4>
+
+                            <button id="addToCart q" class="btn">Add To Cart</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="right">
+
+            <!-- Cart List -->
+            <div class="cart-list" id="cartList">
+
+              
+            
+            </div>
+
+
+            <!-- Total Price -->
+            <div class="totalPrice">
+                <button class="checkout">
+                    <p id="total">$0</p> Check Out
+                </button>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
